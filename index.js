@@ -18,15 +18,11 @@ mongoose.connect(url)
 const server = new ApolloServer({ typeDefs, resolvers });
 
 async function startServer() {
-    await server.start();
-    server.applyMiddleware({ app });
-
-    app.listen(port, () => {
-        console.log(`Server is live on port ${port}`);
-    });
+   
 }
+
 function Testing(){
-    return 0;
+    return 1;
 }
-
-startServer();
+Testing();
+StartServer();
